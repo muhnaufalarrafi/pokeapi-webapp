@@ -1,0 +1,52 @@
+/* PokemonList.css */
+
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .pokemon-list li {
+    list-style-type: none;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin: 5px;
+  }
+  
+  .pokemon-list li:hover {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsif untuk layar tablet */
+  @media screen and (max-width: 768px) {
+    .pokemon-list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px; /* Mengatur jarak antar item di grid */
+    }
+  
+    .pokemon-list li {
+      margin: 5px; /* Memberikan margin agar ada jarak antar elemen */
+    }
+  }
+  
+  /* Responsif untuk layar ponsel */
+  @media screen and (max-width: 480px) {
+    .pokemon-list {
+      grid-template-columns: 1fr;
+      gap: 10px; /* Mengatur jarak antar item di grid */
+    }
+  
+    .pokemon-list li {
+      margin: 5px; /* Memberikan margin agar ada jarak antar elemen */
+    }
+  }
+  
